@@ -1,0 +1,21 @@
+.app-container{
+    display: flex;
+    align-items: first baseline;
+}
+.app-list-kitten img {
+    max-width: 100px; 
+    max-height: 100px;
+  }
+  
+
+  .app-create-kitten img {
+    max-width: 150px; 
+    max-height: 150px;
+  }
+  
+
+  .app-user-kitten img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
