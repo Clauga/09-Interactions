@@ -16,12 +16,16 @@ constructor(private fb: FormBuilder, private kittenService: KittenService) {}
 ngOnInit(): void {
   this.kittenForm = this.fb.group({
     name: ['', Validators.required],
-    age: ['', Validators.required],
+    birthDate: ['', Validators.required],
     breed: ['', Validators.required],
-    image: ['', Validators.required],
+    imgUrl: ['', Validators.required],
       });
     }
     onSubmit(): void {
+      // if (this.kittenForm.valid) {
+      //   this.kittenService.addKitten(this.kittenForm.value);
+      //   this.kittenForm.reset();
+      console.log("Form validity:", this.kittenForm.valid);
       if (this.kittenForm.valid) {
         this.kittenService.addKitten(this.kittenForm.value);
         this.kittenForm.reset();
